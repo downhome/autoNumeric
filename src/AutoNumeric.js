@@ -2250,7 +2250,7 @@ export default class AutoNumeric {
                 // elements (currency) to format.  The forced reflow is caused by calling `window.getSelection() in
                 // AutoNumericHelper/getElementSelection()` and then accessing the resulting `selection` variable in any way
                 // (in this case. selection.getRangeAt(0)).
-                window.requestAnimationFrame(() => {this._historyTableAdd()});
+                window.requestAnimationFrame(() => {this._historyTableAdd(); });
             }
         }
     }
